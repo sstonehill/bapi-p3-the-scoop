@@ -1,0 +1,72 @@
+users:
+  hithere@hello.com:
+    username: hithere@hello.com
+    articleIds:
+      - 1
+    commentIds:
+      - 1
+      - 2
+      - 3
+  next@gmail.com:
+    username: next@gmail.com
+    articleIds:
+      - 2
+    commentIds:
+      - 4
+articles:
+  '1':
+    id: 1
+    title: hi
+    url: hello.com
+    username: hithere@hello.com
+    commentIds:
+      - 1
+      - 2
+      - 3
+    upvotedBy: []
+    downvotedBy: []
+    comments: []
+  '2':
+    id: 2
+    title: new
+    url: new.com
+    username: next@gmail.com
+    commentIds:
+      - 4
+    upvotedBy: []
+    downvotedBy: []
+    comments: []
+nextArticleId: 3
+comments:
+  '1':
+    id: 1
+    body: hi
+    username: hithere@hello.com
+    articleId: 1
+    upvotedBy: []
+    downvotedBy: []
+  '2':
+    id: 2
+    body: hi1
+    username: hithere@hello.com
+    articleId: 1
+    upvotedBy:
+      - hithere@hello.com
+    downvotedBy: []
+  '3':
+    id: 3
+    body: bye
+    username: hithere@hello.com
+    articleId: 1
+    upvotedBy: []
+    downvotedBy:
+      - hithere@hello.com
+  '4':
+    id: 4
+    body: hey ehy
+    username: next@gmail.com
+    articleId: 2
+    upvotedBy:
+      - next@gmail.com
+    downvotedBy: []
+nextCommentId: 5
